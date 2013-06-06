@@ -4,16 +4,92 @@
     <title>Grand Finale</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<style>
+		#carousel {
+			background-image: url('./img/fountain.jpg');
+			background-position: -250px -300px;
+			height: 475px;
+		}
+		#twitter {
+			float:left;
+		}
+		article {
+			float:left;
+		}
+		.firstColumn {
+			width:45%;
+			margin: 0 0 0 80px;
+		}
+		.secondColumn {
+			width:40%;
+		}
+		nav {
+			background-color: purple;
+			position: fixed;
+			width: 60px;
+			height: 100%;
+		}
+		#carousel > hgroup {
+			color: white;
+			float:right;
+			margin: 40px 20px 0 0;
+			background-color: rgba(0,0,0,.5);
+			width: 500px;
+			white-space: nowrap;
+		}
+		#carousel > hgroup > h1 {
+			width: 200px;
+			float:right;
+		}
+		ul {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		ul > li {
+			color: white;
+			font-weight:bold;
+			font-size: 25px;
+			list-style:none;
+			text-align: center;
+			margin: 15px 0px;
+		}
+		a {
+			color: white;
+		}
+		li > div {
+			background-color: pink;
+			position:absolute;
+			left:-400px;
+		}
+		img {
+			float:left;
+			margin:0 10px 10px 0;
+		}
+	</style>
   </head>
   <body>
     <div>
-		<div id="carousel" style="border:1px solid red">&nbsp;</div>
-		<section>
-			<article style="border:1px solid red">
-				<header><h1>My Header</h1></header>
-				<p>Some Content</p>
+		<nav>
+			<ul>
+				<li><a href="mailto:michael@michaelminella.com">E</a><div>michael@michaelminella.com</div></li>
+				<li><a href="tel:(123)456-7890">P</a><div>(123)456-7890</div></li>
+				<li><a href="http://maps.google.com">M</a><div>http://maps.google.com</div></li>
+				<li><a href="http://www.facebook.com">L</a><div>http://www.facebook.com</div></li>
+			</ul>
+		</nav>
+		<div id="carousel">
+			<hgroup class="clearfix">
+				<h1>DePaul</h1>
+				<h2>HTML5 class...the best class we have!</h2>
+			</hgroup>
+		</div>
+		<section class="clearfix">
+			<article class="firstColumn">
+				<header><h1>Suited to your needs and your budget</h1></header>
+				<p>Brig by onemore , the solution is to offer a place on the internet with a website that has the qualities of the greatest. For 500 €, it allows everyone to be proudly represented online. With its responsive and modern design, it adapts automatically to all devices, mobile or desktop. Brig is simple, clean and light. His customization of colors, content and pictures slideshow allows it to meet all needs. We pay particular attention to the latter, we take in order to optimize and guarantee the quality. And if you want, we can add internationalization, customer reviews, more photos, etc.. to make it even more unique. In addition, we ensure the quality of SEO with specific and adapted to the current web technologies. In short, an unbeatable quality / price.</p>
 			</article>
-			<article style="border:1px solid black">
+			<article class="secondColumn">
 				<header><h1>Hours</h1></header>
 				<table>
 					<tr>
@@ -36,11 +112,31 @@
 						<td>Friday</td>
 						<td>8:00 - 5:00</td>
 					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>Closed</td>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td>Closed</td>
+					</tr>
 				</table>
 			</article>
-			<article style="border:1px solid blue">
-				<header><h1>Hours</h1></header>
+			<article class="firstColumn">
+				<header><h1>Pricing</h1></header>
 				<table>
+					<tr>
+						<td>First Entry</td>
+						<td>$19.95</td>
+					</tr>
+					<tr>
+						<td>Second Entry</td>
+						<td>$19.95</td>
+					</tr>
+					<tr>
+						<td>Third Entry</td>
+						<td>$19.95</td>
+					</tr>
 					<tr>
 						<td>First Entry</td>
 						<td>$19.95</td>
@@ -55,7 +151,9 @@
 					</tr>
 				</table>
 			</article>
-			<div style="border:1px solid green">&nbsp;</div>
+			<div id="twitter" class="secondColumn">
+				<p><img src="http://onemore.fr/brig/assets/img/nausicaa.jpg"/>Very slick responsive one pager That Could follows MOST businesses. This is the basic template That the team from OneMore Their use for new customers That need an online presence.Very slick responsive one pager That Could follows MOST businesses. This is the basic template That the team from OneMore Their use for new customers That need an online presence.Very slick responsive one pager That Could follows MOST businesses. This is the basic template That the team from OneMore Their use for new customers That need an online presence.Very slick responsive one pager That Could follows MOST businesses. This is the basic template That the team from OneMore Their use for new customers That need an online presence.</p>
+			</div>
 		</section>
 	</div>
     <script src="http://code.jquery.com/jquery.js"></script>
